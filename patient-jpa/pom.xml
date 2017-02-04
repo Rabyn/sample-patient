@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.cubic.patient</groupId>
+		<artifactId>patient-new</artifactId>
+		<version>1.0-PATIENT-PARENT</version>
+	</parent>
+	<artifactId>patient-jpa</artifactId>
+	<version>${release.version}</version>
+	<name>patient-jpa</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>com.cubic.patient</groupId>
+			<artifactId>patient-common</artifactId>
+			<version>${release.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc5</artifactId>
+			<version>${oracle.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.10.5.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>
